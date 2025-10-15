@@ -1,4 +1,4 @@
-# 🐸 Froggy Geek 🛍️
+# 🐸 Froggy Geek 🍄💫
 
 > 💚 Bem-vindo(a) à **Froggy Geek**!  
 > A loja mais fofa de blusas geek do GitHub!  
@@ -12,7 +12,7 @@ Cada peça é pensada com carinho para deixar seu dia mais alegre! 🐸💖
 
 ---
 
-## 🎨 Características do Site
+## Características do Site
 
 - 🌈 Design colorido, limpo e super fofinho  
 - 📱 Responsivo: funciona em celular, tablet e computador  
@@ -27,8 +27,8 @@ Alguns tipos de blusas que você vai encontrar:
 
 | Tipo | Descrição | Emoji |
 |------|-----------|-------|
-| Geek | Referências de games e animes | 🎮✨ |
-| Meme | Blusas divertidas e engraçadas | 😂 |
+| Geek | Referências de games. filmes e animes | 🎮✨ |
+| Space | Blusas com tema espacial | 💫🌠 |
 | Exclusiva | Designs únicos feitos com amor | 💚 |
 
 ---
