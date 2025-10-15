@@ -1,40 +1,44 @@
-🐸 Froggy Geek 🛍️
+# 🐸 Froggy Geek 🛍️
 
-Bem-vindo(a) ao mundo fofinho da Froggy Geek!
-Aqui, a moda encontra a fofura, e cada blusa tem um toque geek único! ✨
+> 💚 Bem-vindo(a) à **Froggy Geek**!  
+> A loja mais fofa de blusas geek do GitHub!  
 
-💚 Sobre
+---
 
-A Froggy Geek é uma lojinha online dedicada a quem ama blusas estilosas e fofinhas com um toque geek. Nosso objetivo é trazer alegria, conforto e estilo para o seu dia a dia, sem perder aquela vibe divertida e nerd que a gente ama!
+## ✨ Sobre
 
-🎨 Características do Site
+A **Froggy Geek** é uma lojinha online de blusas fofas e geek, feita para quem ama **moda divertida, confortável e estilosa**.  
+Cada peça é pensada com carinho para deixar seu dia mais alegre! 🐸💖
 
-Catálogo interativo com nossas blusas mais fofas 🐸
+---
 
-Design limpo, colorido e super acolhedor 🌈
+## 🎨 Características do Site
 
-Responsivo, funcionando bem em computadores, tablets e celulares 📱
+- 🌈 Design colorido, limpo e super fofinho  
+- 📱 Responsivo: funciona em celular, tablet e computador  
+- 🛒 Navegação simples e interativa  
+- ✨ Catálogo de blusas exclusivo e geek  
 
-Fácil navegação e experiência de compra agradável 🛒
+---
 
-🛍️ Produtos
+## 🛍️ Produtos
 
-Aqui você encontra blusas com temas variados:
+Alguns tipos de blusas que você vai encontrar:
 
-Personagens de games e animes 🎮✨
+| Tipo | Descrição | Emoji |
+|------|-----------|-------|
+| Geek | Referências de games e animes | 🎮✨ |
+| Meme | Blusas divertidas e engraçadas | 😂 |
+| Exclusiva | Designs únicos feitos com amor | 💚 |
 
-Referências geeks e memes engraçados 😂
+---
 
-Designs exclusivos feitos com muito carinho 💚
+## ⚡ Tecnologias
 
-⚡ Tecnologias
+O site foi desenvolvido com:
 
-O site foi desenvolvido usando:
-
-HTML5 & CSS3 – estrutura e estilo do site
-
-JavaScript – interatividade e animações
-
-PHP – (se houver backend) processamento de pedidos e formulários
-
-Git & GitHub – versionamento e hospedagem do projeto
+```text
+HTML5 & CSS3  - Estrutura e estilo
+JavaScript    - Interatividade e animações
+PHP           - Backend para formulários (opcional)
+Git & GitHub  - Versionamento do projeto
