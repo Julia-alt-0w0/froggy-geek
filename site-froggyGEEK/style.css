@@ -1,0 +1,102 @@
+.topo{
+    background-color: #c1ff72;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1{
+    color: #2e6417;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    overflow: hidden; 
+    position: relative;
+}
+
+.menu-nav a{
+    color:rgb(11, 102, 16);
+    padding: 10px 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.banner{
+  /*texto*/
+   text-align: center;
+   /*texto*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #2e6417; 
+   gap:0px;
+   padding: 40px; /*espaçamento do titulo e do menu*/
+   height: 900px; 
+}
+
+.banner h2{
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+.banner .imagens {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 50px; /*distância entre as imagens*/
+
+}
+.banner img{
+  width: 400px;         /* largura fixa */
+  height: 700px;        /* altura fixa */
+  object-fit: cover;    /* corta o excesso sem distorcer */
+  border-radius: 10px;  /* opcional, só pra ficar mais bonito */
+}
+
+
+.new{
+    background-color: #c1ff72;
+    height: 760px;
+}
+
+
+/* RESPONSIVIDADE COMEÇA AQUI    */
+
+/*notebooks/tablets*/
+@media (max-width: 1024px) {
+  .topo {
+    font-size: 32px; /* diminui título pra caber melhor */
+  }
+}
+/*tablets e celulares grandes*/
+@media (max-width: 768px) {
+  .menu-nav {
+    flex-direction: column; /* menu vira empilhado */
+  }
+  .menu-nav a {
+    font-size: 18px;
+    padding: 12px;
+  }
+  .banner {
+    height: auto; /* evita corte do banner */
+    padding: 20px;
+  }
+}
+/*celulares normais*/
+@media (max-width: 480px) {
+  .topo {
+    font-size: 26px;
+    padding: 15px;
+  }
+  .menu-nav a {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
