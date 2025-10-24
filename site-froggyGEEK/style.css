@@ -20,10 +20,13 @@ h1{
 
 .menu-nav a{
     color:rgb(11, 102, 16);
-    padding: 10px 16px;
+    padding: 15px 20px;
     display: block;
     text-decoration: none;
     font-size: 20px;
+}
+.menu-nav a:hover {
+  background-color: #d1d1d1;
 }
 
 .banner{
@@ -54,64 +57,51 @@ h1{
 
 }
 .banner img{
-  width: 400px;         /* largura fixa */
+  width: 350px;         /* largura fixa */
   height: 700px;        /* altura fixa */
   object-fit: cover;    /* corta o excesso sem distorcer */
   border-radius: 10px;  /* opcional, só pra ficar mais bonito */
 }
 
-
-.cartegorias{
-    text-align: center;
-    background-color: #c1ff72;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:40px;
-    padding: 40px; /*espaçamento do titulo e do menu*/
-    height: 900px; 
-}
-
-.cartegorias h3{
-  font-size: 50px;
-  font-weight: normal;
-  color: rgb(3, 3, 3);
-  margin: 0;
-
-}
-
-/* From Uiverse.io by SteveBloX */ 
-.card-container {
+.container-card{
+  text-align: center;
+  background-color: #c1ff72;
+  height: 600px;
+  padding: 70px;
+  gap: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  /* Permite que os itens quebrem a linha */
+  justify-content: center; /* Faz o título ocupar a largura toda, empurrando os cards para baixo */
+    
 }
+.container-card h3{
+    font-size: 50px;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+    width: 100%;
+    
 
-/* seu CSS dos cards */
+    
+}
+/* From Uiverse.io by SteveBloX */ 
 .card {
-  flex-direction: column;
   box-sizing: border-box;
-  width: 200px;
-  height: 300px;
+  width: 300px;
+  height: 400px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
-  text-align: center;
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /**/
+  justify-content: center;
   user-select: none;
   font-weight: bolder;
   color: black;
-  gap: 10px;
-  padding: 10px;
 }
 
 .card:hover {
@@ -124,56 +114,68 @@ h1{
 }
 
 .card img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover; /*deixa a fotinha mais cortada*/
-  border-radius: 20px; /*deixa as bordinhas mais redondas*/
-
+  width: 420px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.card-btn{
-  background-color: #3d8537;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px; /*distância do botão para a imagem do card*/
-}
-
-.card-btn:hover {
-  background-color: #50d659;
-  transform: scale(1.05);
-}
 
 /* RESPONSIVIDADE COMEÇA AQUI    */
 
 /*notebooks/tablets*/
 @media (max-width: 1024px) {
   .topo {
-    font-size: 32px; /* diminui título pra caber melhor */
+    font-size: 20px; /* diminui título pra caber melhor */
+    height: 200px;
+  }
+   .banner {
+    height: auto; /* evita corte do banner */
+    padding: 10px;
   }
 }
+/*notebooks/tablets*/
+@media (max-width: 1024px) {
+  .topo {
+    font-size: 20px;
+    height: 200px;
+  }
+  .banner {
+    height: auto;
+    padding: 10px;
+  }
+  /* Ajuste no menu para telas médias, se necessário */
+  .menu-nav a {
+    font-size: 16px;
+    padding: 15px 10px; /* Diminui o espaçamento lateral */
+  }
+}
+
 /*tablets e celulares grandes*/
 @media (max-width: 768px) {
+  /* Aqui você deve implementar o "menu hamburger"
+    que eu sugeri na resposta anterior, escondendo
+    o .menu-nav e mostrando um botão.
+  */
   .menu-nav {
     flex-direction: column; /* menu vira empilhado */
+    width: 100%; /* Ocupa a largura toda */
   }
   .menu-nav a {
     font-size: 18px;
     padding: 12px;
+    text-align: center; /* Centraliza o texto no menu empilhado */
   }
   .banner {
-    height: auto; /* evita corte do banner */
+    height: auto;
     padding: 20px;
   }
 }
+
 /*celulares normais*/
 @media (max-width: 480px) {
   .topo {
-    font-size: 26px;
+    font-size: 26px; /* Cuidado, isso é maior que os 20px do tablet */
     padding: 15px;
   }
   .menu-nav a {
