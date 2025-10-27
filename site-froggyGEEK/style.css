@@ -2,12 +2,12 @@
     background-color: #c1ff72;
     padding: 20px;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    color: #2e6417;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1{
-    color: #2e6417;
-}
+
 
 .menu-nav{
     display: flex;
@@ -39,7 +39,7 @@ h1{
    background-color: #2e6417; 
    gap:0px;
    padding: 40px; /*espaçamento do titulo e do menu*/
-   height: 900px; 
+   height: 800px; 
 }
 
 .banner h2{
@@ -57,16 +57,17 @@ h1{
 
 }
 .banner img{
-  width: 350px;         /* largura fixa */
-  height: 700px;        /* altura fixa */
+  margin-top: 30px;
+  width: 400px;         /* largura fixa */
+  height: 600px;        /* altura fixa */
   object-fit: cover;    /* corta o excesso sem distorcer */
   border-radius: 10px;  /* opcional, só pra ficar mais bonito */
 }
 
 .container-card{
   text-align: center;
-  background-color: #c1ff72;
-  height: 600px;
+  background-color: #8cb655;
+  height: 700px;
   padding: 70px;
   gap: 50px;
   display: flex;
@@ -77,19 +78,19 @@ h1{
 .container-card h3{
     font-size: 50px;
     font-weight: normal;
-    color: white;
+    color: rgb(69, 68, 16);
     margin: 0;
     width: 100%;
-    
 
-    
 }
+
+  
 /* From Uiverse.io by SteveBloX */ 
 .card {
   box-sizing: border-box;
   width: 300px;
-  height: 400px;
-  background: rgba(217, 217, 217, 0.58);
+  height: 350px;
+  background: rgba(230, 228, 228, 0.797);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
@@ -97,12 +98,14 @@ h1{
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
+  flex-direction: column;  
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;  /* joga o conteúdo pro topo */
   user-select: none;
   font-weight: bolder;
   color: black;
 }
+
 
 .card:hover {
   border: 1px solid black;
@@ -113,13 +116,19 @@ h1{
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-.card img{
-  width: 420px;
-  height: 400px;
-  padding: 10px;
-  border-radius: 20px;
+.card img {
+  width: 280px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
+ h4{
+  font-size: 40px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2e6417;
+}
 
 /* RESPONSIVIDADE COMEÇA AQUI    */
 
