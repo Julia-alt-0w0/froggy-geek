@@ -61,14 +61,14 @@
   width: 400px;         /* largura fixa */
   height: 600px;        /* altura fixa */
   object-fit: cover;    /* corta o excesso sem distorcer */
-  border-radius: 10px;  /* opcional, só pra ficar mais bonito */
+  border-radius: 10px;  
 }
 
-.container-card{
+.container-card{   /*fudo dos cards*/
   text-align: center;
   background-color: #8cb655;
-  height: 700px;
-  padding: 70px;
+  height: 680px;
+  padding: 80px;
   gap: 50px;
   display: flex;
   flex-wrap: wrap;  /* Permite que os itens quebrem a linha */
@@ -89,12 +89,11 @@
 .card {
   box-sizing: border-box;
   width: 300px;
-  height: 350px;
   background: rgba(230, 228, 228, 0.797);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
-  border-radius: 17px;
+  padding: 10px;
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
@@ -104,12 +103,14 @@
   user-select: none;
   font-weight: bolder;
   color: black;
+  border-radius: 20px;
 }
 
 
 .card:hover {
   border: 1px solid black;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card:active {
@@ -119,16 +120,27 @@
 .card img {
   width: 280px;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
- h4{
-  font-size: 40px;
+.text-cartegoria{
+  font-size: 30px;
   margin-top: 20px;
   font-weight: bold;
   color: #2e6417;
+  
 }
+
+.card a{
+  text-decoration: none; /*tira a marquina do link do a href*/
+}
+
+
+
+/*page 2 css*/
+
+
 
 /* RESPONSIVIDADE COMEÇA AQUI    */
 
