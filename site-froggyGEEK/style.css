@@ -140,6 +140,96 @@
 
 /*page 2 css*/
 
+/* --- Container dos Produtos --- */
+/* Isso usa Flexbox para alinhar seus cards automaticamente */
+.produto-container {
+  margin-top: -30px;
+  background-color: #2e6417;
+  display: flex;          /* Ativa o Flexbox */
+  flex-wrap: wrap;        /* Faz os cards quebrarem a linha em telas menores */
+  justify-content: center; /* Centraliza os cards na página */
+  gap: 20px;              /* Espaço entre os cards */
+  padding: 20px;          /* Espaço nas bordas da página */
+}
+
+/* --- Estilo do Card Individual --- */
+.produto-card {
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito de "levantar" ao passar o mouse */
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Imagem do Produto --- */
+.produto-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* --- Título do Produto --- */
+.produto-card h3 {
+  font-size: 1.2rem; /* 1.2 vezes o tamanho da fonte padrão */
+  margin: 10px 0;
+  color: #333;
+}
+
+/* --- Preço do Produto --- */
+.produto-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4CAF50; /* Um verde para combinar com "Froggy Geek" */
+  margin-bottom: 15px;
+}
+
+/* --- Container dos Botões --- */
+.btn-produto {
+  display: flex;
+  justify-content: space-between; /* Coloca um botão em cada ponta */
+  align-items: center;
+}
+
+/* --- Botão "Adicionar ao Carrinho" --- */
+.btn-add-cart {
+  background-color: #28a745; /* Verde mais forte */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-grow: 1; /* Faz ele ocupar o espaço disponível */
+  margin-right: 10px; /* Espaço até o botão de favorito */
+  transition: background-color 0.2s;
+}
+
+.btn-add-cart:hover {
+  background-color: #218838; /* Verde mais escuro no hover */
+}
+
+/* --- Botão "Favoritar" --- */
+.btn-favorite {
+  background-color: #f0f0f0; /* Um cinza claro */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1.2rem; /* Aumenta o tamanho do emoji/ícone */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-favorite:hover {
+  background-color: #e0e0e0;
+}
+
 
 
 /* RESPONSIVIDADE COMEÇA AQUI    */
