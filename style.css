@@ -1,0 +1,307 @@
+.topo{
+    background-color: #c1ff72;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #2e6417;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    overflow: hidden; 
+    position: relative;
+}
+
+.menu-nav a{
+    color:rgb(11, 102, 16);
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu-nav a:hover {
+  background-color: #d1d1d1;
+}
+
+.banner{
+  /*texto*/
+   text-align: center;
+   /*texto*/
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #2e6417; 
+   gap:0px;
+   padding: 40px; /*espaçamento do titulo e do menu*/
+   height: 800px; 
+}
+
+.banner h2{
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+  margin: 0;
+}
+
+.banner .imagens {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 50px; /*distância entre as imagens*/
+
+}
+.banner img{
+  margin-top: 30px;
+  width: 400px;         /* largura fixa */
+  height: 600px;        /* altura fixa */
+  object-fit: cover;    /* corta o excesso sem distorcer */
+  border-radius: 10px;  
+}
+
+.container-card{   /*fudo dos cards*/
+  text-align: center;
+  background-color: #8cb655;
+  height: 680px;
+  padding: 80px;
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;  /* Permite que os itens quebrem a linha */
+  justify-content: center; /* Faz o título ocupar a largura toda, empurrando os cards para baixo */
+    
+}
+.container-card h3{
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(69, 68, 16);
+    margin: 0;
+    width: 100%;
+
+}
+
+  
+/* From Uiverse.io by SteveBloX */ 
+.card {
+  box-sizing: border-box;
+  width: 300px;
+  background: rgba(230, 228, 228, 0.797);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: flex-start;  /* joga o conteúdo pro topo */
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  border-radius: 20px;
+}
+
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.card img {
+  width: 280px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.text-cartegoria{
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2e6417;
+  
+}
+
+.card a{
+  text-decoration: none; /*tira a marquina do link do a href*/
+}
+
+
+
+/*page's css*/
+
+/* --- Container dos Produtos --- */
+/* Isso usa Flexbox para alinhar seus cards automaticamente */
+.produto-container {
+  margin-top: -30px;
+  background-color: #2e6417;
+  display: flex;          /* Ativa o Flexbox */
+  flex-wrap: wrap;        /* Faz os cards quebrarem a linha em telas menores */
+  justify-content: center; /* Centraliza os cards na página */
+  gap: 20px;              /* Espaço entre os cards */
+  padding: 20px;          /* Espaço nas bordas da página */
+}
+
+/* --- Estilo do Card Individual --- */
+.produto-card {
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease; /* Efeito suave ao passar o mouse */
+}
+.produto-card a{
+  text-decoration: none;
+  
+}
+
+/* Efeito de "levantar" ao passar o mouse */
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Imagem do Produto --- */
+.produto-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* --- Título do Produto --- */
+.produto-card h5 {
+  text-decoration: none;
+  font-size: 1.2rem; /* 1.2 vezes o tamanho da fonte padrão */
+  margin: 10px 0;
+  color: #783737;
+}
+
+/* --- Preço do Produto --- */
+.produto-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4CAF50; /* Um verde para combinar com "Froggy Geek" */
+  margin-bottom: 15px;
+}
+
+/* --- Container dos Botões --- */
+.btn-produto {
+  display: flex;
+  justify-content: space-between; /* Coloca um botão em cada ponta */
+  align-items: center;
+}
+
+
+
+/* --- Botão "Adicionar ao Carrinho" --- */
+.btn-add-cart {
+  text-decoration: none;
+  background-color: #28a745; /* Verde mais forte */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-grow: 1; /* Faz ele ocupar o espaço disponível */
+  margin-right: 10px; /* Espaço até o botão de favorito */
+  transition: background-color 0.2s;
+}
+
+.btn-add-cart:hover {
+  background-color: #218838; /* Verde mais escuro no hover */
+  
+}
+
+/* --- Botão "Favoritar" --- */
+.btn-favorite {
+  background-color: #f0f0f0; /* Um cinza claro */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 1.2rem; /* Aumenta o tamanho do emoji/ícone */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-favorite:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+/* RESPONSIVIDADE COMEÇA AQUI    */
+
+/*notebooks/tablets*/
+@media (max-width: 1024px) {
+  .topo {
+    font-size: 20px; /* diminui título pra caber melhor */
+    height: 200px;
+  }
+   .banner {
+    height: auto; /* evita corte do banner */
+    padding: 10px;
+  }
+}
+/*notebooks/tablets*/
+@media (max-width: 1024px) {
+  .topo {
+    font-size: 20px;
+    height: 200px;
+  }
+  .banner {
+    height: auto;
+    padding: 10px;
+  }
+  /* Ajuste no menu para telas médias, se necessário */
+  .menu-nav a {
+    font-size: 16px;
+    padding: 15px 10px; /* Diminui o espaçamento lateral */
+  }
+}
+
+/*tablets e celulares grandes*/
+@media (max-width: 768px) {
+  /* Aqui você deve implementar o "menu hamburger"
+    que eu sugeri na resposta anterior, escondendo
+    o .menu-nav e mostrando um botão.
+  */
+  .menu-nav {
+    flex-direction: column; /* menu vira empilhado */
+    width: 100%; /* Ocupa a largura toda */
+  }
+  .menu-nav a {
+    font-size: 18px;
+    padding: 12px;
+    text-align: center; /* Centraliza o texto no menu empilhado */
+  }
+  .banner {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/*celulares normais*/
+@media (max-width: 480px) {
+  .topo {
+    font-size: 26px; /* Cuidado, isso é maior que os 20px do tablet */
+    padding: 15px;
+  }
+  .menu-nav a {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
